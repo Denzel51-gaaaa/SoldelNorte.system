@@ -24,7 +24,7 @@ const INITIAL_MENU = [
   { id: 'PL-11', name: 'Cerveza Cusqueña Trigo (620ml)', category: 'Bebidas', station: 'BAR', price: 15.00, desc: 'Bien fría en vaso servido para acompañar mariscos', isAvailable: true, prepMinutes: 1 },
   { id: 'PL-12', name: 'Limonada Frozen al Hierbaluisa (Jarra 1L)', category: 'Bebidas', station: 'BAR', price: 14.00, desc: 'Refrescante frappeada con limones norteños y hierbaluisa', isAvailable: true, prepMinutes: 3 },
   { id: 'PL-13', name: 'Gaseosa InkaKola (1.5L)', category: 'Bebidas', station: 'BAR', price: 12.00, desc: 'Refrescante gaseosa del Perú', isAvailable: true, prepMinutes: 0 },
-  { id: 'PL-14', name: 'Gaseosa CocaCola (1.5L)', category: 'Bebidas', station: 'BAR', price: 12.00, desc: 'Refrescante gaseosa negra', isAvailable: true, prepMinutes: 0 },
+  { id: 'PL-14', name: 'Gaseosa CocaCola (1.5L)', category: 'Bebidas', station: 'BAR', price: 12.00, desc: 'Refrescante gaseosa negra', isAvailable: true, prepMinutes: 0 }
 ];
 
 // Estructura de Mesas con Zonas físicas del restaurante
