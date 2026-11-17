@@ -15,13 +15,16 @@ const INITIAL_MENU = [
   { id: 'PL-02', name: 'Ceviche Mixto Especial', category: 'Ceviches', station: 'COLD', price: 44.00, desc: 'Pescado fresco, pulpo tierno, langostinos y calamar crocante', isAvailable: true, prepMinutes: 10 },
   { id: 'PL-03', name: 'Tiradito al Ají Amarillo', category: 'Ceviches', station: 'COLD', price: 40.00, desc: 'Finas láminas de corvina bañadas en crema de ají amarillo ahumado', isAvailable: true, prepMinutes: 8 },
   { id: 'PL-04', name: 'Arroz con Mariscos a la Chiclayana', category: 'Calientes', station: 'HOT', price: 45.00, desc: 'Arroz meloso en aderezo norteño con mariscos selectos al wok y toque de pisco', isAvailable: true, prepMinutes: 15 },
-  { id: 'PL-05', name: 'Chicharrón de Calamar & Pescado', category: 'Calientes', station: 'HOT', price: 38.00, desc: 'Trocitos dorados y crocantes con yucas fritas y salsa tártara de la casa', isAvailable: true, prepMinutes: 12 },
-  { id: 'PL-06', name: 'Parihuela Levanta Muertos', category: 'Calientes', station: 'HOT', price: 48.00, desc: 'Concentrado marino norteño con cangrejo entero, mariscos y chicha de jora', isAvailable: true, prepMinutes: 18 },
-  { id: 'PL-07', name: 'Causa Marina con Pulpa de Cangrejo', category: 'Entradas', station: 'COLD', price: 32.00, desc: 'Papa amarilla con toque de ají, palta cremosa y pulpa pura de cangrejo', isAvailable: true, prepMinutes: 6 },
-  { id: 'PL-08', name: 'Leche de Tigre con Chicharrón', category: 'Entradas', station: 'COLD', price: 24.00, desc: 'Copa concentrada con canchita chulpi y chicharrón crocante de pota', isAvailable: true, prepMinutes: 5 },
-  { id: 'PL-09', name: 'Chicha Morada Tradicional (Jarra 1L)', category: 'Bebidas', station: 'BAR', price: 16.00, desc: 'Elaborada artesanalmente con maíz morado, piña, membrillo y canela', isAvailable: true, prepMinutes: 2 },
-  { id: 'PL-10', name: 'Cerveza Cusqueña Trigo (620ml)', category: 'Bebidas', station: 'BAR', price: 15.00, desc: 'Bien fría en vaso servido para acompañar mariscos', isAvailable: true, prepMinutes: 1 },
-  { id: 'PL-11', name: 'Limonada Frozen al Hierbaluisa', category: 'Bebidas', station: 'BAR', price: 14.00, desc: 'Refrescante frappeada con limones norteños y hierbaluisa', isAvailable: true, prepMinutes: 3 }
+  { id: 'PL-05', name: 'Chaufa de Mariscos', category: 'Calientes', station: 'HOT', price: 40.00, desc: 'Arroz chaufa acompañado de mariscos selectos al wok con un ligero toque de aceite de ajonjoli', isAvailable: true, prepMinutes: 14 },
+  { id: 'PL-06', name: 'Chicharrón de Calamar & Pescado', category: 'Calientes', station: 'HOT', price: 38.00, desc: 'Trocitos dorados y crocantes con yucas fritas y salsa tártara de la casa', isAvailable: true, prepMinutes: 12 },
+  { id: 'PL-07', name: 'Parihuela Levanta Muertos', category: 'Calientes', station: 'HOT', price: 48.00, desc: 'Concentrado marino norteño con cangrejo entero, mariscos y chicha de jora', isAvailable: true, prepMinutes: 18 },
+  { id: 'PL-08', name: 'Causa Marina con Pulpa de Cangrejo', category: 'Entradas', station: 'COLD', price: 32.00, desc: 'Papa amarilla con toque de ají, palta cremosa y pulpa pura de cangrejo', isAvailable: true, prepMinutes: 6 },
+  { id: 'PL-09', name: 'Leche de Tigre con Chicharrón', category: 'Entradas', station: 'COLD', price: 24.00, desc: 'Copa concentrada con canchita chulpi y chicharrón crocante de pota', isAvailable: true, prepMinutes: 5 },
+  { id: 'PL-10', name: 'Chicha Morada Tradicional (Jarra 1L)', category: 'Bebidas', station: 'BAR', price: 16.00, desc: 'Elaborada artesanalmente con maíz morado, piña, membrillo y canela', isAvailable: true, prepMinutes: 2 },
+  { id: 'PL-11', name: 'Cerveza Cusqueña Trigo (620ml)', category: 'Bebidas', station: 'BAR', price: 15.00, desc: 'Bien fría en vaso servido para acompañar mariscos', isAvailable: true, prepMinutes: 1 },
+  { id: 'PL-12', name: 'Limonada Frozen al Hierbaluisa (Jarra 1L)', category: 'Bebidas', station: 'BAR', price: 14.00, desc: 'Refrescante frappeada con limones norteños y hierbaluisa', isAvailable: true, prepMinutes: 3 }
+  { id: 'PL-13', name: 'Gaseosa Inka Kola (1.5L)', category: 'Bebidas', station: 'BAR', price: 12.00, desc: 'Refrescante gaseosa del Perú', isAvailable: true, prepMinutes: 0 }
+  { id: 'PL-14', name: 'Gaseosa Coca Cola (1.5L)', category: 'Bebidas', station: 'BAR', price: 12.00, desc: 'Refrescante gaseosa negra', isAvailable: true, prepMinutes: 0 }
 ];
 
 // Estructura de Mesas con Zonas físicas del restaurante
