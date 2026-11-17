@@ -11,20 +11,25 @@ const STORAGE_KEY = 'soldelnorte_enterprise_v2';
 
 // Catálogo con enrutamiento de estación de cocina (Fría, Caliente, Barra)
 const INITIAL_MENU = [
-  { id: 'PL-01', name: 'Ceviche Clásico del Día', category: 'Ceviches', station: 'COLD', price: 38.00, desc: 'Pesca fresca del día, ají limo norteño, choclo tierno y camote glaseado', isAvailable: true, prepMinutes: 8 },
-  { id: 'PL-02', name: 'Ceviche Mixto Especial', category: 'Ceviches', station: 'COLD', price: 44.00, desc: 'Pescado fresco, pulpo tierno, langostinos y calamar crocante', isAvailable: true, prepMinutes: 10 },
-  { id: 'PL-03', name: 'Tiradito al Ají Amarillo', category: 'Ceviches', station: 'COLD', price: 40.00, desc: 'Finas láminas de corvina bañadas en crema de ají amarillo ahumado', isAvailable: true, prepMinutes: 8 },
-  { id: 'PL-04', name: 'Arroz con Mariscos a la Chiclayana', category: 'Calientes', station: 'HOT', price: 45.00, desc: 'Arroz meloso en aderezo norteño con mariscos selectos al wok y toque de pisco', isAvailable: true, prepMinutes: 15 },
-  { id: 'PL-05', name: 'Chaufa de Mariscos', category: 'Calientes', station: 'HOT', price: 40.00, desc: 'Arroz chaufa acompañado de mariscos selectos al wok con un ligero toque de aceite de ajonjoli', isAvailable: true, prepMinutes: 14 },
-  { id: 'PL-06', name: 'Chicharrón de Calamar & Pescado', category: 'Calientes', station: 'HOT', price: 38.00, desc: 'Trocitos dorados y crocantes con yucas fritas y salsa tártara de la casa', isAvailable: true, prepMinutes: 12 },
-  { id: 'PL-07', name: 'Parihuela Levanta Muertos', category: 'Calientes', station: 'HOT', price: 48.00, desc: 'Concentrado marino norteño con cangrejo entero, mariscos y chicha de jora', isAvailable: true, prepMinutes: 18 },
-  { id: 'PL-08', name: 'Causa Marina con Pulpa de Cangrejo', category: 'Entradas', station: 'COLD', price: 32.00, desc: 'Papa amarilla con toque de ají, palta cremosa y pulpa pura de cangrejo', isAvailable: true, prepMinutes: 6 },
-  { id: 'PL-09', name: 'Leche de Tigre con Chicharrón', category: 'Entradas', station: 'COLD', price: 24.00, desc: 'Copa concentrada con canchita chulpi y chicharrón crocante de pota', isAvailable: true, prepMinutes: 5 },
-  { id: 'PL-10', name: 'Chicha Morada Tradicional (Jarra 1L)', category: 'Bebidas', station: 'BAR', price: 16.00, desc: 'Elaborada artesanalmente con maíz morado, piña, membrillo y canela', isAvailable: true, prepMinutes: 2 },
-  { id: 'PL-11', name: 'Cerveza Cusqueña Trigo (620ml)', category: 'Bebidas', station: 'BAR', price: 15.00, desc: 'Bien fría en vaso servido para acompañar mariscos', isAvailable: true, prepMinutes: 1 },
-  { id: 'PL-12', name: 'Limonada Frozen al Hierbaluisa (Jarra 1L)', category: 'Bebidas', station: 'BAR', price: 14.00, desc: 'Refrescante frappeada con limones norteños y hierbaluisa', isAvailable: true, prepMinutes: 3 },
-  { id: 'PL-13', name: 'Gaseosa InkaKola (1.5L)', category: 'Bebidas', station: 'BAR', price: 12.00, desc: 'Refrescante gaseosa del Perú', isAvailable: true, prepMinutes: 0 },
-  { id: 'PL-14', name: 'Gaseosa CocaCola (1.5L)', category: 'Bebidas', station: 'BAR', price: 12.00, desc: 'Refrescante gaseosa negra', isAvailable: true, prepMinutes: 0 }
+  { id: 'PL-01', name: 'Ceviche Clásico del Día', category: 'Ceviches', station: 'COLD', price: 35.00, desc: 'Pesca fresca del día, ají limo norteño, choclo tierno y camote glaseado', isAvailable: true, prepMinutes: 8 },
+  { id: 'PL-02', name: 'Ceviche de Pota del Día', category: 'Ceviches', station: 'COLD', price: 30.00, desc: 'Pota fresca del día, ají limo norteño, choclo tierno y camote glaseado', isAvailable: true, prepMinutes: 7 },
+  { id: 'PL-03', name: 'Ceviche Mixto Especial', category: 'Ceviches', station: 'COLD', price: 35.00, desc: '(Pescado o pota fresca), pulpo tierno, langostinos y calamar crocante', isAvailable: true, prepMinutes: 10 },
+  { id: 'PL-04', name: 'Tiradito al Ají Amarillo', category: 'Ceviches', station: 'COLD', price: 30.00, desc: 'Finas láminas de corvina bañadas en crema de ají amarillo ahumado', isAvailable: true, prepMinutes: 8 },
+  { id: 'PL-05', name: 'Arroz con Mariscos a la Chiclayana', category: 'Calientes', station: 'HOT', price: 35.00, desc: 'Arroz meloso en aderezo norteño con mariscos selectos al wok y toque de pisco', isAvailable: true, prepMinutes: 15 },
+  { id: 'PL-06', name: 'Chaufa de Mariscos', category: 'Calientes', station: 'HOT', price: 30.00, desc: 'Arroz chaufa acompañado de mariscos selectos al wok con un ligero toque de aceite de ajonjoli', isAvailable: true, prepMinutes: 14 },
+  { id: 'PL-07', name: 'Chicharrón de Calamar & Pescado', category: 'Calientes', station: 'HOT', price: 35.00, desc: 'Porción de trocitos dorados y crocantes con yucas fritas y salsa tártara de la casa', isAvailable: true, prepMinutes: 12 },
+  { id: 'PL-08', name: 'Parihuela Levanta Muertos', category: 'Calientes', station: 'HOT', price: 40.00, desc: 'Concentrado marino norteño con cangrejo entero, mariscos y chicha de jora', isAvailable: true, prepMinutes: 18 },
+  { id: 'PL-09', name: 'Sudadito de Pescado', category: 'Calientes', station: 'HOT', price: 38.00, desc: 'Sopa ligera de pescado al vapor en sus propios jugos junto con cebolla, tomate y hierbas', isAvailable: true, prepMinutes: 17 },
+  { id: 'PL-10', name: 'Chilcano Especial', category: 'Entradas', station: 'HOT', price: 15.00, desc: 'Caldo concentrado de pescado con canchita chulpi y pequeña porcion de mariscos', isAvailable: true, prepMinutes: 5 },
+  { id: 'PL-11', name: 'Causa Marina con Pulpa de Cangrejo', category: 'Entradas', station: 'COLD', price: 20.00, desc: 'Papa amarilla con toque de ají, palta cremosa y pulpa pura de cangrejo', isAvailable: true, prepMinutes: 6 },
+  { id: 'PL-12', name: 'Causa Marina Acevichada', category: 'Entradas', station: 'COLD', price: 15.00, desc: 'Papa amarilla con toque de ají, rellena de pesacado sancochado y porción de ceviche añadida', isAvailable: true, prepMinutes: 6 },
+  { id: 'PL-13', name: 'Leche de Tigre con Chicharrón', category: 'Entradas', station: 'COLD', price: 22.00, desc: 'Copa concentrada con canchita chulpi y chicharrón crocante de pota', isAvailable: true, prepMinutes: 5 },
+  { id: 'PL-14', name: 'Chicha Morada Tradicional (Jarra 1L)', category: 'Bebidas', station: 'BAR', price: 16.00, desc: 'Elaborada artesanalmente con maíz morado, piña, membrillo y canela', isAvailable: true, prepMinutes: 2 },
+  { id: 'PL-15', name: 'Cerveza Pilsen Callao (630ml)', category: 'Bebidas', station: 'BAR', price: 15.00, desc: 'Bien fría cerveza para brindar y acompañar', isAvailable: true, prepMinutes: 0 },
+  { id: 'PL-16', name: 'Cerveza Cusqueña Trigo (630ml)', category: 'Bebidas', station: 'BAR', price: 15.00, desc: 'Bien fría cerveza de trigo para acompañar', isAvailable: true, prepMinutes: 0 },
+  { id: 'PL-17', name: 'Limonada Frozen a la Hierbaluisa (Jarra 1L)', category: 'Bebidas', station: 'BAR', price: 14.00, desc: 'Refrescante frappeada con limones norteños y hierbaluisa', isAvailable: true, prepMinutes: 3 },
+  { id: 'PL-18', name: 'Gaseosa Inka Kola (1.5L)', category: 'Bebidas', station: 'BAR', price: 12.00, desc: 'Refrescante gaseosa del Perú que acompaña bien', isAvailable: true, prepMinutes: 0 },
+  { id: 'PL-19', name: 'Gaseosa Coca Cola (1.5L)', category: 'Bebidas', station: 'BAR', price: 12.00, desc: 'Refrescante gaseosa negra que acompaña bien', isAvailable: true, prepMinutes: 0 }
 ];
 
 // Estructura de Mesas con Zonas físicas del restaurante
